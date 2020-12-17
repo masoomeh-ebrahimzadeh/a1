@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<style>
+	input[type=email],[type=text]
+	{
+		color:red;
+	}
+	
+</style>
+</head>
+
+<body>
+	<p id="p">
+		it's time to set a form!
+	</p>
+	<form id="frm" >
+		<input type="email"><br>
+		<input type="text" list="q" placeholder="شهر خود را وارد کنید"><br>
+		<input type="password" maxlength="8">
+		<datalist id="q">
+			<option>tehran
+			<option>isfahan
+			<option>shiraz
+		</datalist>
+		
+		<input type="submit" formmethod="post" formaction="action.php" formnovalidate><br>
+	</form>
+	
+	
+	
+</body>
+</html>
