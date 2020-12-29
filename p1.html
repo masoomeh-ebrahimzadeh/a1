@@ -1,0 +1,60 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<style>
+			div{
+				width : 150px;
+				height : 200px;
+				background-color : skyblue;
+				margin : 50px;
+			}
+		</style>
+		<script src="jQuery.js"></script>
+		<script>
+			 $.noConflict()
+			jQuery('document').ready(function($){
+			
+				/*$('#btn').mouseenter(function(){
+					$('div').hide();
+				}),
+					$('#btn').mouseleave(function(){
+						$('div').show();
+					})
+				$('#btn').hover(function(){
+					$('div').hide();
+				} ,$('#btn').hover(function(){
+					$('div').show();
+				})
+				) */
+				$('#btn').on(
+				{
+					"mousedown" : function(){
+						$('div').hide();				
+				} ,
+					"mouseleave" : function(){
+						$('#txt').focus();
+						$('#txt').css('background-color' , "skyblue");
+						
+				},
+					"mouseup" : function(){
+						$('div').show();
+				}
+				}
+				)
+					
+					
+				
+				
+				
+			})
+		</script>
+	</head>
+	<body>
+		<input type="button" id="btn" value="submit">
+		<input type="text" id="txt">
+		<div>salamm1</div>
+		<div>salamm2</div>
+		<div>salamm3</div>
+		<div>salamm4</div>
+	</body>
+</html>
